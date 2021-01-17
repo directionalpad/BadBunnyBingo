@@ -1,0 +1,54 @@
+table { 
+    font-family: 'Open Sans', sans-serif;
+	border-collapse: collapse; 
+	margin:50px auto;
+}
+
+/* Zebra striping */
+tr { 
+	background: #eee; 
+}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: center; 
+    font-size: 18px;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+#game-title {
+    padding: 5px;
+    font-size: 55px;
+    line-height: -27px;
+    margin-top: 45px;
+    display: block;
+    text-align: center;
+    width: 450px;
+    color: white;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Teko', sans-serif;
+}
+
+#game-board {
+    margin-top: -35px;
+}
+
+.social-icon, .social-icon:hover {
+    margin: auto;
+    text-decoration: none;
+}
+
+.square-stamped {
+    background-color: orange;
+}
