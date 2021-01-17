@@ -1,14 +1,18 @@
 import BoardSquare from './board-square.js';
 import Bank from './bank.js';
+import cookie from './cookie.js';
 
 export default class Board {
     constructor(boardState = undefined) {
         this._bank = [...Bank];
         this._squares = [];
+        this._cookieOptions = { expires: 7 }
 
         // Create board if no state is present
         if(!boardState) {
             this.generateNewBoard();
+        } else {
+            this.loadBoardFromHash(boardState);
         }
     }
 
@@ -26,9 +30,11 @@ export default class Board {
 
                 this._squares.push(new BoardSquare(this._bank.indexOf(item), false, false));
             } else {           // Free Space
-                this._squares.push(new BoardSquare(-1, false, true));
+                this._squares.push(new BoardSquare(-1, true, true));
             }
         }
+
+        cookie.set('boardState', this.generateBoardHash(), this._cookieOptions);
     }
 
     getBoardMarkup() {
@@ -45,7 +51,31 @@ export default class Board {
     }
 
     generateBoardHash() {
+        let boardState = btoa(JSON.stringify(this._squares));
+        return boardState;
+    }
 
+    loadBoardFromHash(hash) {
+        let deserializedBoardState = JSON.parse(atob(hash));
+        for(let i = 0; i < deserializedBoardState.length; i++) {
+            let boardSquare = new BoardSquare();
+            Object.assign(boardSquare, deserializedBoardState[i]);
+            deserializedBoardState[i] = boardSquare;
+        }
+
+        this._squares = deserializedBoardState;
+    }
+
+    updateSquareStates(squares) {
+        for(let i = 0; i < squares.length; i++) {
+            if(squares[i].classList.contains('square-stamped')) {
+                this._squares[i].setStamped(true);
+            } else {
+                this._squares[i].setStamped(false);
+            }
+        }
+
+        cookie.set('boardState', this.generateBoardHash(), this._cookieOptions);
     }
 
     getSquares() {

@@ -1,8 +1,16 @@
 import Board from './board.js';
+import cookie from './cookie.js';
+
+// const board;
 
 $(document).ready(function() {
-    let board = new Board();
+    const board = new Board(cookie.get('boardState'));
     $("tbody").append(board.getBoardMarkup());
+
+    $("#new-board").click(function() {
+        cookie.remove('boardState');
+        document.location.reload(true);
+    });
 
     $(".bingo-square").click(function() {
         if($(this).hasClass('square-stamped')) {
@@ -10,5 +18,8 @@ $(document).ready(function() {
         } else {
             $(this).addClass('square-stamped');
         }
+
+        board.updateSquareStates($("td").toArray());
     });
 });
+
