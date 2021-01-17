@@ -22,5 +22,7 @@ export default [
     "\"Dareth\"",
     "Bunny yells at groovers",
     "Alcohol on stream",
-    "Bunny can't think of a word"
+    "Bunny can't think of a word",
+    "Bunny does Yoga",
+    "Bunny puts on glasses"
 ];
