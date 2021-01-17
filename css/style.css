@@ -84,6 +84,7 @@ footer {
     color: #333333;
     height: 30px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 footer > a, a:hover, a:active {
