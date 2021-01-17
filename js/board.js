@@ -6,7 +6,7 @@ export default class Board {
     constructor(boardState = undefined) {
         this._bank = [...Bank];
         this._squares = [];
-        this._cookieOptions = { expires: 7 } //, secure: true }
+        this._cookieOptions = { expires: 7 , secure: true }
         this._winnerViewMode = false;
 
         // Create board if no state is present
