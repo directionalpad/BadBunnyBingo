@@ -26,5 +26,6 @@ export default [
     "Bunny does Yoga",
     "Bunny puts on glasses",
     "Scam sub goal ACTIVATE!",
-    "Samba appears on stream"
+    "Samba appears on stream",
+    "Bunny can't pronounce chatter name"
 ];
