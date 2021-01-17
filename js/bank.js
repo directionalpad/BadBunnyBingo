@@ -28,5 +28,6 @@ export default [
     "Scam sub goal ACTIVATE!",
     "Samba appears on stream",
     "Bunny can't pronounce chatter name",
-    "\"SOURCE?!\""
+    "\"SOURCE?!\"",
+    "Bunny mentions bingo"
 ];
