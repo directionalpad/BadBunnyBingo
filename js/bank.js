@@ -25,5 +25,6 @@ export default [
     "Bunny can't think of a word",
     "Bunny does Yoga",
     "Bunny puts on glasses",
-    "Scam sub goal ACTIVATE!"
+    "Scam sub goal ACTIVATE!",
+    "Samba appears on stream"
 ];
