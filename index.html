@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="bingo-game.js"></script>
+        <style>
+            #bingo-title {
+                display: block;
+                height: 75px;
+                width: 800px;
+                color: white;
+                background-color: black;
+                margin: auto;
+                text-align: center;
+                font-size: 64px;
+            }
+            
+            #bingo-board {
+                background-color: black;
+                display: block;
+                text-align: center;
+                height: 796px;
+                width: 796px;
+                border: 2px solid #000;    
+                margin: auto;            
+            }
+
+            .bingo-square {
+                background-color: white;
+                text-align:center;
+                height: 156px;
+                width: 156px;
+                border: 2px solid #000;
+                margin: auto;
+                display: table-cell;
+                cursor: pointer;
+                font-size: 22px;
+            }
+
+            
+            .bingo-free-space {
+                background-color: yellow;
+                text-align:center;
+                height: 160px;
+                width: 160px;
+                border: 2px solid #000;
+                margin: auto;
+                display: table-cell;
+                cursor: pointer;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .square-clicked {
+                background-color: yellow;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <br /><br />
+        <div id="bingo-title">BADBUNNY BINGO</div>
+        <div id="bingo-board">
+            <table id="board" cellspacing="0" cellpadding="0">
+            </table>
+        </div>
+    </body>
+</html>

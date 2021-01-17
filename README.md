@@ -1,2 +1,11 @@
 # BadBunnyBingo
-I did a thing. Now you can too.
+BadBunny Bingo Edition
+
+I hacked this together in about 30 minutes.
+
+List of things that need to be done:
+
+- Responsive Design
+- Larger Bank of Bingo Items
+- Add a win screen?
+- I don't know
