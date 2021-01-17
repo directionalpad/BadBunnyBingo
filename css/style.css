@@ -52,7 +52,7 @@ td, th {
     margin-top: -35px;
 }
 
-nav > a, a:hover, a:active {
+nav > a, nav > a:hover, nav > a:active {
     padding: 5px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -89,4 +89,40 @@ footer {
 footer > a, a:hover, a:active {
     text-decoration: none;
     color: #3498db;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+#win-screen {
+    margin: 50px auto;
+    height: 656px;
+    width: 656px;
+    background: url('../images/bingo.png');
+    text-align: center;
+}
+
+#win-screen > a, #win-screen > a:hover, #win-screen > a:active {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+	font-size: 30px;
+    font-weight: bold;
+}
+
+#win-text {
+    display: block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Teko', sans-serif;
+    text-shadow: -64px 64px 0 #ccc,
+                  64px 64px 0 #ccc,
+                  64px -64px 0 #ccc,
+                 -64px -64px 0 #ccc;
+
+    font-size: 72px;
+    padding-top: 85px;
+    padding-bottom: 350px;
 }

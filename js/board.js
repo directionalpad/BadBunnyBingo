@@ -6,7 +6,8 @@ export default class Board {
     constructor(boardState = undefined) {
         this._bank = [...Bank];
         this._squares = [];
-        this._cookieOptions = { expires: 7, secure: true }
+        this._cookieOptions = { expires: 7 } //, secure: true }
+        this._winnerViewMode = false;
 
         // Create board if no state is present
         if(!boardState) {
@@ -64,6 +65,13 @@ export default class Board {
         }
 
         this._squares = deserializedBoardState;
+
+        // Check if board is in a win state and purge
+        if(this.isBoardInWinState()) {
+            cookie.remove('boardState');
+            this._squares = [];
+            this.generateNewBoard();
+        }
     }
 
     updateSquareStates(squares) {
@@ -78,7 +86,58 @@ export default class Board {
         cookie.set('boardState', this.generateBoardHash(), this._cookieOptions);
     }
 
+    isBoardInWinState() {
+        // Lazy win evaluation until I clean up the code further
+        for(let i = 0; i < 25; i += 5) {        // Horizontal Row Check
+            if(this._squares[i].getStamped() &&
+                this._squares[i+1].getStamped() &&
+                this._squares[i+2].getStamped() &&
+                this._squares[i+3].getStamped() &&
+                this._squares[i+4].getStamped()) {
+                    return true;
+                }                
+        }
+
+        for(let i = 0; i < 5; i++) {        // Vertical Row Check
+            if(this._squares[i].getStamped() &&
+                this._squares[i+5].getStamped() &&
+                this._squares[i+10].getStamped() &&
+                this._squares[i+15].getStamped() &&
+                this._squares[i+20].getStamped()) {
+                    return true;
+                }  
+        }
+
+        // Diagnol Right Check
+        if(this._squares[0].getStamped() &&
+            this._squares[6].getStamped() &&
+            this._squares[12].getStamped() &&
+            this._squares[18].getStamped() &&
+            this._squares[24].getStamped()) {
+            return true;
+        }
+
+        // Diagnol Left Check
+        if(this._squares[4].getStamped() &&
+            this._squares[8].getStamped() &&
+            this._squares[12].getStamped() &&
+            this._squares[16].getStamped() &&
+            this._squares[20].getStamped()) {
+                return true;
+        }  
+
+        return false;
+    }
+
     getSquares() {
         return this._squares;
+    }
+
+    getWinnerViewMode() {
+        return this._winnerViewMode;
+    }
+
+    setWinnerViewMode(value) {
+        this._winnerViewMode = value;
     }
 }
