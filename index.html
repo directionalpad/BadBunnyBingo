@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/style.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="js/js.cookie.js"></script>
         <script src="js/game.js" type="module"></script>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,7 +17,7 @@
     </head>
     <body>
         <nav>
-            <a href="#" id="new-board">New Board</a>
+            <a href="#" class="new-board">New Board</a>
         </nav>
         <div id="game-title">
             BADBUNNY BINGO
@@ -28,9 +27,14 @@
                 <tbody>                    
                 </tbody>
             </table>
+            <div id="win-screen" class="hidden">
+                <div id="win-text">BINGO</div>
+                <a href="#" id="winner-view">View Board</a><br /><br />
+                <a href="#" class="new-board">New Board</a>
+            </div>
         </div>
     </body>
     <footer>
-        Created by <a href="https://twitter.com/directionalpad" target="_new">directionalpad</a>. Original concept by <a href="https://www.twitch.tv/braingenius1" target="_new">BrainGenius</a>. Stop reading this and go give your money to <a href="https://twitch.tv/BadBunny" target="_new">BadBunny</a>.
+        Created by <a href="https://twitter.com/directionalpad" target="_new">directionalpad</a>. Original concept by <a href="https://www.twitch.tv/BrainGeeenius" target="_new">BrainGenius</a>. Stop reading this and go give your money to <a href="https://twitch.tv/BadBunny" target="_new">BadBunny</a>.
     </footer>
 </html>
