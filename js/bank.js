@@ -32,5 +32,6 @@ export default [
     "Bunny mentions bingo",
     "\"Why aren't you rich?\"",
     "Bunny pauses video after SWEARING not to",
-    "Bunny doesn't thanks sub for 20+ mins"
+    "Bunny doesn't thanks sub for 20+ mins",
+    "Bunny misidentifies an actor"
 ];
