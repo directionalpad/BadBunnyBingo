@@ -2,7 +2,7 @@ export default [
     "Bunny does makeup",
     "Frames start dropping",
     "\"I'm a vegan\"",
-    "Bunny denies chat of MUBBELZ",
+    "Bunny denies chat of MUBBLEZ",
     "\"Marxism is a critique of capitalism\"",
     "Chloe gets horny",
     "Spent the Rent dono bomb",
