@@ -30,5 +30,6 @@ export default [
     "Bunny can't pronounce chatter name",
     "\"SOURCE?!\"",
     "Bunny mentions bingo",
-    "\"Why aren't you rich?\""
+    "\"Why aren't you rich?\"",
+    "Bunny pauses video after SWEARING not to"
 ];
