@@ -1,12 +1,14 @@
 import BoardSquare from './board-square.js';
 import Bank from './bank.js';
+import FreeSpaceBank from './free-space-bank.js';
 import cookie from './cookie.js';
 
 export default class Board {
     constructor(boardState = undefined) {
         this._bank = [...Bank];
+        this._freeSpaceBank = [...FreeSpaceBank];
         this._squares = [];
-        this._cookieOptions = { expires: 7 , secure: true }
+        this._cookieOptions = { expires: 7, secure: true }
         this._winnerViewMode = false;
 
         // Create board if no state is present
@@ -31,7 +33,8 @@ export default class Board {
 
                 this._squares.push(new BoardSquare(this._bank.indexOf(item), false, false));
             } else {           // Free Space
-                this._squares.push(new BoardSquare(-1, true, true));
+                let item = this._freeSpaceBank[Math.floor(Math.random() * this._freeSpaceBank.length)]
+                this._squares.push(new BoardSquare(this._freeSpaceBank.indexOf(item), true, true));
             }
         }
 

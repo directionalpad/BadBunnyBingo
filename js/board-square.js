@@ -1,4 +1,5 @@
 import Bank from './bank.js';
+import FreeSpaceBank from './free-space-bank.js';
 
 export default class BoardSquare {
     constructor(bankPosition, isStamped = false, isFreeSpace = false) {
@@ -27,7 +28,12 @@ export default class BoardSquare {
         if(!this._isFreeSpace) {
             return `<td class="bingo-square ${(this._isStamped) ? 'square-stamped' : ''}">${Bank[this._bankPosition]}</td>`;
         } else {
-            return `<td class="bingo-free-square square-stamped"><strong>LATE</strong></td>`;   
+            // Old Game Migrations
+            if(this._bankPosition < 0) {
+                this._bankPosition = 0;
+            }
+
+            return `<td class="bingo-free-square square-stamped"><strong>${FreeSpaceBank[this._bankPosition]}</strong></td>`;   
         }
     }
 }
