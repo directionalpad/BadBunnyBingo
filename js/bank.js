@@ -29,5 +29,6 @@ export default [
     "Samba appears on stream",
     "Bunny can't pronounce chatter name",
     "\"SOURCE?!\"",
-    "Bunny mentions bingo"
+    "Bunny mentions bingo",
+    "\"Why aren't you rich?\""
 ];
