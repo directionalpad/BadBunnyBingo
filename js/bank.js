@@ -33,5 +33,6 @@ export default [
     "\"Why aren't you rich?\"",
     "Bunny pauses video after SWEARING not to",
     "Bunny doesn't thanks sub for 20+ mins",
-    "Bunny misidentifies an actor"
+    "Bunny misidentifies an actor",
+    "Male leftist streamer mentioned"
 ];
