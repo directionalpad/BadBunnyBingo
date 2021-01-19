@@ -34,5 +34,7 @@ export default [
     "Bunny pauses video after SWEARING not to",
     "Bunny doesn't thanks sub for 20+ mins",
     "Bunny misidentifies an actor",
-    "Male leftist streamer mentioned"
+    "Male leftist streamer mentioned",
+    "Paypig gifts a sub",
+    "Sub goal reached"
 ];
