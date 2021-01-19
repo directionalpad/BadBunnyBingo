@@ -13,7 +13,6 @@ export default [
     "\"SHUT UUUUUP!!!\"",
     "Bunny vapes some weed",
     "Star Trek is discussed",
-    "Chatter says $5 a MONTH",
     "\"What's the male version of Karen?\"",
     "Watch any part of a Richard Wolff video",
     "Bunny yells at mods",

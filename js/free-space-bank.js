@@ -1,5 +1,6 @@
 export default [
     "LATE",
     "HENLO",
-    "IT BACK"
+    "IT BACK",
+    "FIVE DOLLARS A MONTH"
 ];
