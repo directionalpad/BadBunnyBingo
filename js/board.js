@@ -8,7 +8,7 @@ export default class Board {
         this._bank = [...Bank];
         this._freeSpaceBank = [...FreeSpaceBank];
         this._squares = [];
-        this._cookieOptions = { expires: 7, secure: true }
+        this._cookieOptions = { expires: 2, secure: true }
         this._winnerViewMode = false;
 
         // Create board if no state is present
