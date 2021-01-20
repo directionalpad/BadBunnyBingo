@@ -8,11 +8,19 @@ $(document).ready(function() {
     $("tbody").append(board.getBoardMarkup());
 
     $(".new-board").click(function() {
+        // Remove old board state cookie
         cookie.remove('boardState');
-        document.location.reload(true);
+ 
+        // Generate new board and display
+        board.generateNewBoard();
+        $("tbody").empty().append(board.getBoardMarkup());
+
+        // Show Bingo Card view if not present already
+        $("#win-screen").addClass('hidden');
+        $("table").removeClass('hidden');
     });
 
-    $(".bingo-square").click(function() {
+    $("tbody").on("click", ".bingo-square", function(event) {
         if(board.getWinnerViewMode()) {
             return;
         }
@@ -38,6 +46,6 @@ $(document).ready(function() {
             $("#win-screen").addClass('hidden');
             $("table").removeClass('hidden');
         }
-    })
+    });
 });
 

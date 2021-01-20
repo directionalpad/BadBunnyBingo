@@ -20,6 +20,9 @@ export default class Board {
     }
 
     generateNewBoard() {
+        this._squares = [];
+        this._winnerViewMode = false;
+
         let tempBank = [...Bank];
 
         for(let i = 0; i < 25; i++) {
