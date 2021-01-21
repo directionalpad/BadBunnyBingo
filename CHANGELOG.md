@@ -1,3 +1,8 @@
+## 2021-01-21
+
+### Changed
+- Bingo square text is no longer highlightable/selectable.
+
 ## 2021-01-20
 
 ### Added

@@ -31,6 +31,7 @@ td, th {
     width: 120px;
     height: 120px;
     cursor: pointer;
+    user-select: none;
 }
 
 #game-title {
