@@ -99,9 +99,11 @@ footer > a, a:hover, a:active {
 
 #win-screen {
     margin: 50px auto;
-    height: 656px;
-    width: 656px;
-    background: url('../images/bingo.png');
+    height: 706px;
+    width: 706px;
+    background-image: url('../images/bingo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
