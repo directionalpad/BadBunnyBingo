@@ -3,6 +3,9 @@
 ### Changed
 - Bingo square text is no longer highlightable/selectable.
 
+### Fixed
+- Fixed a bug where the game script could load before jQuery loaded causing the game to not function (thank you @ironforward)
+
 ## 2021-01-20
 
 ### Added
