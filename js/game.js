@@ -4,7 +4,13 @@ import cookie from './cookie.js';
 // const board;
 
 $(document).ready(function() {
+    let theme = cookie.get('theme');
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme === undefined) {
+        $("body").toggleClass('dark-theme');
+    }
+
     const board = new Board(cookie.get('boardState'));
+
     $("tbody").append(board.getBoardMarkup());
 
     $(".new-board").click(function() {
@@ -45,6 +51,17 @@ $(document).ready(function() {
         if(board.isBoardInWinState()) {
             $("#win-screen").addClass('hidden');
             $("table").removeClass('hidden');
+        }
+    });
+
+    $(".theme-toggle").click(function() {
+        $("body").toggleClass('dark-theme');
+
+        theme = cookie.get('theme');
+        if(theme !== undefined){
+            cookie.remove("theme");
+        } else {
+            cookie.set("theme", "dark-theme",{ expires: cookie.expiresMultiplier, secure: true });
         }
     });
 });

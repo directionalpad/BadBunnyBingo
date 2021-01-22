@@ -130,3 +130,32 @@ footer > a, a:hover, a:active {
     padding-top: 85px;
     padding-bottom: 375px;
 }
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+    body.dark-theme #game-title {
+        background: #23272a;
+        color: #99aab5;
+    }
+    
+    body.dark-theme td {
+        color: white;
+    }
+    
+    body.dark-theme .square-stamped {
+        color:black;
+    }
+    
+    body.dark-theme {
+        background: #2e3136;
+    }
+    
+    body.dark-theme tr {
+        background: #666; 
+    }
+    
+    body.dark-theme td, th {
+        border: 1px solid grey; 
+    }
+}
+
