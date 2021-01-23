@@ -1,10 +1,17 @@
+## 2021-01-22
+
+### Added
+- Two new bingo square items:
+    - "Husker makes chat watch depressing video" (thanks to @Omegacat)
+    - "Bunny plays Aqui y Ahora video" (thanks to @BrainGenius)
+
 ## 2021-01-21
 
 ### Changed
 - Bingo square text is no longer highlightable/selectable.
 
 ### Fixed
-- Fixed a bug where the game script could load before jQuery loaded causing the game to not function (thank you @ironforward)
+- Fixed a bug where the game script could load before jQuery loaded causing the game to not function (thank you @ironforward).
 
 ## 2021-01-20
 

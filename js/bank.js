@@ -35,5 +35,7 @@ export default [
     "Bunny misidentifies an actor",
     "Male leftist streamer mentioned",
     "Paypig gifts a sub",
-    "Sub goal met"
+    "Sub goal met",
+    "Bunny plays Aqui y Ahora video",
+    "Husker makes chat watch a depressing video"
 ];
