@@ -1,3 +1,10 @@
+## 2021-01-24
+
+### Added
+- Two new bingo square items:
+    - "Bunny references The Matrix" (thanks to @BrainGenius)
+    - "Bunny tells McDonad's story" (thanks to @BrainGenius)
+
 ## 2021-01-22
 
 ### Added

@@ -37,5 +37,7 @@ export default [
     "Paypig gifts a sub",
     "Sub goal met",
     "Bunny plays Aqui y Ahora video",
-    "Husker makes chat watch a depressing video"
+    "Husker makes chat watch a depressing video",
+    "Bunny references The Matrix",
+    "Bunny tells McDonald's story"
 ];
