@@ -1,3 +1,9 @@
+## 2021-01-26
+
+### Added
+- One new bingo square item:
+    - "\"Start a YouTube\"" (thanks to @ChloeB42)
+
 ## 2021-01-24
 
 ### Added

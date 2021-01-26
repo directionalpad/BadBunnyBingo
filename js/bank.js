@@ -39,5 +39,6 @@ export default [
     "Bunny plays Aqui y Ahora video",
     "Husker makes chat watch a depressing video",
     "Bunny references The Matrix",
-    "Bunny tells McDonald's story"
+    "Bunny tells McDonald's story",
+    "\"Start a YouTube\""
 ];
