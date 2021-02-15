@@ -6,7 +6,8 @@ import cookie from './cookie.js';
 $(document).ready(function() {
     let theme = cookie.get('theme');
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme === undefined) {
-        $("body").toggleClass('dark-theme');
+        $("body").addClass('dark-theme');
+        cookie.set("theme", "dark-theme",{ expires: cookie.expiresMultiplier, secure: true });
     }
     
     const board = new Board(cookie.get('boardState'));
@@ -55,14 +56,15 @@ $(document).ready(function() {
     });
 
     $(".theme-toggle").on('click', function() {
-        $("body").toggleClass('dark-theme');
-
         theme = cookie.get('theme');
+
         if(theme !== undefined){
             console.log(theme);
             cookie.remove("theme");
+            $("body").removeClass('dark-theme');
         } else {
             cookie.set("theme", "dark-theme",{ expires: cookie.expiresMultiplier, secure: true });
+            $("body").addClass('dark-theme');
         }
         return false;
     });
