@@ -8,7 +8,7 @@ $(document).ready(function() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme === undefined) {
         $("body").toggleClass('dark-theme');
     }
-
+    
     const board = new Board(cookie.get('boardState'));
 
     $("tbody").append(board.getBoardMarkup());
@@ -54,15 +54,17 @@ $(document).ready(function() {
         }
     });
 
-    $(".theme-toggle").click(function() {
+    $(".theme-toggle").on('click', function() {
         $("body").toggleClass('dark-theme');
 
         theme = cookie.get('theme');
         if(theme !== undefined){
+            console.log(theme);
             cookie.remove("theme");
         } else {
             cookie.set("theme", "dark-theme",{ expires: cookie.expiresMultiplier, secure: true });
         }
+        return false;
     });
 });
 
