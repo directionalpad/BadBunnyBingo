@@ -134,28 +134,28 @@ footer > a, a:hover, a:active {
 /* dark theme */
 @media (prefers-color-scheme: dark) {
     body.dark-theme #game-title {
-        background: #23272a;
-        color: #99aab5;
+        background: #23272a !important;
+        color: #99aab5 !important;
     }
     
     body.dark-theme td {
-        color: white;
+        color: white !important;
     }
     
     body.dark-theme .square-stamped {
-        color:black;
+        color:black !important;
     }
     
     body.dark-theme {
-        background: #2e3136;
+        background: #2e3136 !important;
     }
     
     body.dark-theme tr {
-        background: #666; 
+        background: #666 !important; 
     }
     
     body.dark-theme td, th {
-        border: 1px solid grey; 
+        border: 1px solid grey !important; 
     }
 }
 
