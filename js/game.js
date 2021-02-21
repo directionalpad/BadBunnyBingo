@@ -5,7 +5,7 @@ import cookie from './cookie.js';
 
 $(document).ready(function() {
     let theme = cookie.get('theme');
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme === undefined) {
+    if (theme !== undefined || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme === undefined)) {
         $("body").addClass('dark-theme');
         cookie.set("theme", "dark-theme",{ expires: cookie.expiresMultiplier, secure: true });
     }
