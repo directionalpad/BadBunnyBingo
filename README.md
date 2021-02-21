@@ -1,7 +1,7 @@
 # BadBunnyBingo
 BadBunny Bingo Edition
 
-I hacked this together in about 30 minutes.
+Directionalpad hacked this together in about 30 minutes.
 
 List of things that need to be done:
 
