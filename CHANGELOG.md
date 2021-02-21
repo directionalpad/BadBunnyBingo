@@ -1,3 +1,9 @@
+## 2021-02-20
+
+### Added
+- One new bingo square item:
+    - "Czech racist erases own nation's BLM" (thanks to @Husker)
+
 ## 2021-01-26
 
 ### Added

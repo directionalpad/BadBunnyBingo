@@ -40,5 +40,6 @@ export default [
     "Husker makes chat watch a depressing video",
     "Bunny references The Matrix",
     "Bunny tells McDonald's story",
-    "\"Start a YouTube\""
+    "\"Start a YouTube\"",
+    "Czech racist erases own nation's BLM"
 ];
