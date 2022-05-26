@@ -1,4 +1,4 @@
-# BadBunnyBingo
+# KiraChatsBingo
 KiraChats Bingo Edition
 
 Directionalpad hacked this together in about 30 minutes.
